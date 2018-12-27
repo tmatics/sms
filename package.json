@@ -1,0 +1,37 @@
+{
+  "name": "sms",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "url": "http://github.com/ramvinothk/sms"
+  },
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "author": {
+    "name": "Ramvinoth K",
+    "url": "ramvinothk@teezle.com"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "cron": "^1.1.0",
+    "good": "^6.6.0",
+    "good-console": "^5.3.1",
+    "hapi": "^9.5.1",
+    "lodash": "^4.13.1",
+    "moment": "^2.14.1",
+    "request": "^2.75.0",
+    "service-factory-dev": "git+https://tpm:t676@bitbucket.org/tlib/service-factory-dev.git",
+    "service-factory-prod": "git+https://tpm:t676@bitbucket.org/tlib/service-factory-prod.git",
+    "service-factory-test": "git+https://tpm:t676@bitbucket.org/tlib/service-factory-test.git",
+    "tbuild-client": "git+https://tpm:t676@bitbucket.org/tlib/tbuild-client.git",
+    "tdatadriver": "git+https://tpm:t676@bitbucket.org/tode/tdatadriver.git",
+    "tlogger": "git+https://tpm:t676@bitbucket.org/tode/tlogger.git",
+    "tode": "git+https://tpm:t676@bitbucket.org/tode/tode.git#tode200-express4",
+    "twilio": "^2.9.1",
+    "underscore": "^1.8.3",
+    "xml2json": "^0.10.0"
+  },
+  "devDependencies": {}
+}

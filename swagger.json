@@ -1,0 +1,419 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "SMS-api",
+        "description": "To send SMS related api calls",
+        "version": "0.1.0"
+    },
+    "gitRepoName" : "sms-client",
+    "className" : "Sms",
+    "host": "0.0.0.0:8642",
+    "schemes": [
+        "http"
+    ],
+    "basePath": "/v1",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/": {
+            "get": {
+                "summary": "SAMPLE URL",
+                "description": "Sample url returns the OK response",
+                "parameters": [],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of products",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sample"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error"
+                    }
+                }
+            }
+        },
+        "/v1/sendsms": {
+            "post": {
+                "summary": "Send Sms from Device",
+                "description": "This method used to send SMS",
+                "parameters": [
+                    {
+                        "name": "messageFrom",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "toMobileNumber",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "messageId",
+                        "in": "formData",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "message",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "sa",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    }
+                ],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An JSON object returns the array of Trip Management.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sample"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error"
+                    }
+                }
+            }
+        },
+        "/v1/sendsms": {
+            "post": {
+                "summary": "Send Sms from Device",
+                "description": "This method used to send SMS",
+                "parameters": [
+                    {
+                        "name": "messageFrom",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "toMobileNumber",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "messageId",
+                        "in": "formData",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "date",
+                        "in": "formData",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "message",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "sa",
+                        "in": "formData",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    }
+                ],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An JSON object returns the array of Trip Management.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sample"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error"
+                    }
+                }
+            }
+        },
+        "/v1/list/sms/message": {
+            "get": {
+                "summary": "Send Sms from Device",
+                "description": "This method used to send SMS",
+                "parameters": [
+                    {
+                        "name": "messageDirection",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "deviceId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "pageNo",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "accountId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "communicatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": true,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "sa",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    }
+
+                ],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An JSON object returns the array of Trip Management.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sample"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error"
+                    }
+                }
+            }
+        },
+        "/v1/move/sms/message": {
+            "get": {
+                "summary": "Send Sms from Device",
+                "description": "This method used to send SMS",
+                "parameters": [
+                    {
+                        "name": "communicatorId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "accountId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    }
+
+                ],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An JSON object returns the array of Trip Management.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sample"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error"
+                    }
+                }
+            }
+        },
+        "/v1/send/ack/sms": {
+            "get": {
+                "summary": "Send Sms from Device",
+                "description": "This method used to send SMS",
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "accountId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    }
+
+                ],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An JSON object returns the array of Trip Management.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sample"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error"
+                    }
+                }
+            }
+        },
+        "/v1/list/sms/message/count": {
+            "get": {
+                "summary": "Send Sms from Device",
+                "description": "This method used to send SMS",
+                "parameters": [
+                    {
+                        "name": "messageDirection",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "deviceId",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "accountsArray",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "type": "string",
+                        "format": "double"
+                    }
+
+                ],
+                "tags": [
+                    ""
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An JSON object returns the array of Trip Management.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sample"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "sample": {
+            "type": "object"
+        }
+    }
+}
